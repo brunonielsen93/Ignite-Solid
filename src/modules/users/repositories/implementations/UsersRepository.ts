@@ -27,6 +27,9 @@ class UsersRepository implements IUsersRepository {
       created_at: new Date(),
       updated_at: new Date(),
     });
+    this.users.push(user);
+
+    return user;
   }
 
   findById(id: string): User | undefined {

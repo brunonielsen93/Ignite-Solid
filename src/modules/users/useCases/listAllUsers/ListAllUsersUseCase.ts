@@ -14,7 +14,7 @@ class ListAllUsersUseCase {
       throw new Error("User not Found");
     }
     if (!user.admin) {
-      throw new Error("User have not permission to get full Super Users list");
+      throw new Error("User have no permission to get the full users list");
     }
 
     const users = this.usersRepository.list();
